@@ -7,7 +7,7 @@
 <h1>Departments</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-primary">Add Department</a>
 </p>
 <table class="table">
     <thead>
@@ -27,7 +27,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Administrator)
             </th>
-            <th></th>
+            <th>Department Options</th>
         </tr>
     </thead>
     <tbody>
@@ -45,16 +45,16 @@
             @*<td>
                 @Html.DisplayFor(modelItem => item.RowVersion)
             </td>*@
-            <td>
+            @*<td>
                 @Html.DisplayFor(modelItem => item.Administrator.FirstMidName)
-            </td>
+            </td>*@
             <td>
                 @Html.DisplayFor(modelItem => item.Administrator.FullName)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.DepartmentID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.DepartmentID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.DepartmentID">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.DepartmentID" class="btn btn-primary">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.DepartmentID" class="btn btn-primary">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.DepartmentID" class="btn btn-primary">Delete</a>
             </td>
         </tr>
 }

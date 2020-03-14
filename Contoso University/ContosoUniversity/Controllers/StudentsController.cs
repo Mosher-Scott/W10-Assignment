@@ -70,7 +70,7 @@ namespace ContosoUniversity.Controllers
             }
 
             // Change this to change how many results display per page
-            int pageSize = 3;
+            int pageSize = 6;
 
             // Since we don't care about keeping it 100% up to date, use AsNoTracking for speed improvement
             // Original, without pagination on the results 
